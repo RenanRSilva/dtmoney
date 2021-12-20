@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 export function App() {
   return (
     <div className="App">
@@ -5,5 +7,3 @@ export function App() {
     </div>
   );
 }
-
-export default App;
