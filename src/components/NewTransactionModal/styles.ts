@@ -54,11 +54,18 @@ export const TransactionTypeContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
+`;
 
-  button{
+interface RadioBoxProps {
+  isActive: boolean;
+}
+
+export const RadioBox = styled.button<RadioBoxProps>`
     height: 4rem;
     border: 1px solid #d7d7d7;
     border-radius: 0.25rem;
+
+    background: ${(props) => props.isActive ? '#EEE' : 'tranparent'};
 
     background: transparent;
 
@@ -80,6 +87,6 @@ export const TransactionTypeContainer = styled.div`
       margin-left: 1rem;
       font-size: 1rem;
       color: var(--text-title);
-    }
+
   }
-`;
+`
