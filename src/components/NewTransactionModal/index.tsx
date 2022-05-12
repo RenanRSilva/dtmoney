@@ -70,16 +70,16 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
             type='button'
             onClick={() => { setType('deposit') }}
             isActive={type === 'deposit'}
-            activeColor="green"
+            activeColor='green'
           >
             <img src={IncomeImg} alt="Entrada" />
             <span>Entrada</span>
           </RadioBox>
           <RadioBox
             type='button'
-            onClick={() => { setType('withdraw') }}
+            onClick={() => setType('withdraw')}
             isActive={type === 'withdraw'}
-            activeColor="red"
+            activeColor='red'
           >
             <img src={OutcomeImg} alt="Entrada" />
             <span>Saida</span>

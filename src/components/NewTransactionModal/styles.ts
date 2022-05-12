@@ -63,8 +63,8 @@ interface RadioBoxProps {
 }
 
 const colors = {
-  green: '#33cc95',
-  red: '#e52e2D'
+  green: '#33CC95',
+  red: '#E62E4D'
 }
 
 export const RadioBox = styled.button<RadioBoxProps>`
@@ -72,12 +72,9 @@ export const RadioBox = styled.button<RadioBoxProps>`
     border: 1px solid #d7d7d7;
     border-radius: 0.25rem;
 
-    background: ${(props) => props.isActive
-    ? transparentize(0.9, colors[props.activeColor])
-    : 'tranparent'
-  };
-
-    background: transparent;
+     background: ${(props) => props.isActive
+    ? transparentize(0.8, colors[props.activeColor])
+    : 'transparent'};
 
     display: flex;
     align-items: center;
@@ -97,6 +94,5 @@ export const RadioBox = styled.button<RadioBoxProps>`
       margin-left: 1rem;
       font-size: 1rem;
       color: var(--text-title);
-
   }
 `
